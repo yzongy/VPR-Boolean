@@ -1,0 +1,26 @@
+%% created on 18. Mar. 2022 using pyboolnet
+% pyboolnet is available at https://github.com/hklarner/pyboolnet
+
+% encoding of prime implicants as hyper-arcs that consist of a unique "target" and (possibly) several "sources".
+% "target" and "source" are triplets that consist of a variable name, an activity and a unique arc-identifier. 
+
+
+% generator: "in_set(ID)" specifies which arcs are chosen for a trap set (ID is unique for target(_,_,_)).
+{in_set(ID) : target(V,S,ID)}.
+
+% consistency constraint
+:- in_set(ID1), in_set(ID2), target(V,1,ID1), target(V,0,ID2).
+
+% stability constraint
+:- in_set(ID1), source(V,S,ID1), not in_set(ID2) : target(V,S,ID2).
+
+% bijection constraint (between asp solutions and trap spaces)
+% to avoid the repetition of equivalent solutions we add all prime implicants
+% that agree with the current solution.
+in_set(ID) :- target(V,S,ID), hit(V,S), hit(V1,S1) : source(V1,S1,ID).
+
+% "hit" captures the stable variables and their activities.
+hit(V,S) :- in_set(ID), target(V,S,ID).
+
+% show fixed nodes
+#show hit/2.

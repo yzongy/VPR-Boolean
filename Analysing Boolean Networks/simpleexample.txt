@@ -1,0 +1,7 @@
+xA,  xB
+xB,  xH
+xC,  !xD | xA
+xD,  xC
+xE,  xB&xF
+xF,  xE
+xH,  1

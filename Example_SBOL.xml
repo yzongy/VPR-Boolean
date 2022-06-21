@@ -1,0 +1,106 @@
+<?xml version='2.0' encoding='UTF-8'?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sbol="http://sbols.org/v2#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/">
+  <sbol:ModuleDefinition rdf:about="https://synbiohub.org/user/zyang22/GRN/2">
+    <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/GRN"/>
+    <sbol:displayId>GRN</sbol:displayId>
+    <sbol:version>2</sbol:version>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="https://synbiohub.org/user/zyang22/GRN/YAL007C_fc/2">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/GRN/YAL007C_fc"/>
+        <sbol:displayId>YAL007C_fc</sbol:displayId>
+        <sbol:version>2</sbol:version>
+        <sbol:definition rdf:resource="https://synbiohub.org/user/zyang22/YAL007C"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#private"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="https://synbiohub.org/user/zyang22/GRN/YAL003W_fc/2">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/GRN/YAL003W_fc"/>
+        <sbol:displayId>YAL003W_fc</sbol:displayId>
+        <sbol:version>2</sbol:version>
+        <sbol:definition rdf:resource="https://synbiohub.org/user/zyang22/YAL003W"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#private"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="https://synbiohub.org/user/zyang22/GRN/YER111C_fc/2">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/GRN/YER111C_fc"/>
+        <sbol:displayId>YER111C_fc</sbol:displayId>
+        <sbol:version>2</sbol:version>
+        <sbol:definition rdf:resource="https://synbiohub.org/user/zyang22/YER111C"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#private"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#none"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL003W/2">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL003W"/>
+        <sbol:displayId>YER111C_regulates_YAL003W</sbol:displayId>
+        <sbol:version>2</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL003W/YER111C_fc/2">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL003W/YER111C_fc"/>
+            <sbol:displayId>YER111C_fc</sbol:displayId>
+            <sbol:version>2</sbol:version>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+            <sbol:participant rdf:resource="https://synbiohub.org/user/zyang22/GRN/YER111C_fc/2"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL003W/YAL003W_fc/2">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL003W/YAL003W_fc"/>
+            <sbol:displayId>YAL003W_fc</sbol:displayId>
+            <sbol:version>2</sbol:version>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000336"/>
+            <sbol:participant rdf:resource="https://synbiohub.org/user/zyang22/GRN/YAL003W_fc/2"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL007C/2">
+        <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL007C"/>
+        <sbol:displayId>YER111C_regulates_YAL007C</sbol:displayId>
+        <sbol:version>2</sbol:version>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000170"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL007C/YAL007C_fc/2">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL007C/YAL007C_fc"/>
+            <sbol:displayId>YAL007C_fc</sbol:displayId>
+            <sbol:version>2</sbol:version>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000336"/>
+            <sbol:participant rdf:resource="https://synbiohub.org/user/zyang22/GRN/YAL007C_fc/2"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL007C/YER111C_fc/2">
+            <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/GRN/YER111C_regulates_YAL007C/YER111C_fc"/>
+            <sbol:displayId>YER111C_fc</sbol:displayId>
+            <sbol:version>2</sbol:version>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000459"/>
+            <sbol:participant rdf:resource="https://synbiohub.org/user/zyang22/GRN/YER111C_fc/2"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+<sbol:ComponentDefinition rdf:about="https://synbiohub.org/user/zyang22/YER111C/2">
+  <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/YER111C"/>
+  <sbol:displayId>YER111C</sbol:displayId>
+  <sbol:version>2</sbol:version>
+  <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
+</sbol:ComponentDefinition>
+<sbol:ComponentDefinition rdf:about="https://synbiohub.org/user/zyang22/YAL003W/2">
+  <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/YAL003W"/>
+  <sbol:displayId>YAL003W</sbol:displayId>
+  <sbol:version>2</sbol:version>
+  <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
+</sbol:ComponentDefinition>
+<sbol:ComponentDefinition rdf:about="https://synbiohub.org/user/zyang22/YAL007C/2">
+  <sbol:persistentIdentity rdf:resource="https://synbiohub.org/user/zyang22/YAL007C"/>
+  <sbol:displayId>YAL007C</sbol:displayId>
+  <sbol:version>2</sbol:version>
+  <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
+</sbol:ComponentDefinition>

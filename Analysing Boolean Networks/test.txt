@@ -1,0 +1,12 @@
+#asdsad
+
+CycD, (CycD[-1])
+Rb, ((!CycA[-1] & !CycB[-1] & !CycD[-1] & !CycE[-1]) | (p27[-1] & !CycB[-1] & !CycD[-1]))
+E2F, ((!Rb[-1] & !CycA[-1] & !CycB[-1]) | (p27[-1] & !Rb[-1] & !CycB[-1]))
+CycE, (E2F[-1] & !Rb[-1])
+CycA, ((E2F[-1] & !Rb[-1] & !Cdc20[-1] & !(Cdh1[-1] & UbcH10[-1])) | (CycA[-1] & !Rb[-1] & !Cdc20[-1] & !(Cdh1[-1] & UbcH10[-1])))
+p27, ((!CycD[-1] & !CycE[-1] & !CycA[-1] & !CycB[-1]) | (p27[-1] & !(CycE[-1] & CycA[-1]) & !CycB[-1] & !CycD[-1]))
+Cdc20, CycB[-1]
+Cdh1, ((!CycA[-1] & !CycB[-1]) | Cdc20[-1] | (p27[-1] & !CycB[-1]))
+UbcH10, (!Cdh1[-1] | (Cdh1[-1] & UbcH10[-1] & (Cdc20[-1] | CycA[-1] | CycB[-1])))
+CycB, (!Cdc20[-1] & !Cdh1[-1])
